@@ -1,0 +1,33 @@
+<script>
+    function objLookups(val){
+        var result =""
+
+        var lookup = {
+            "alpha": "adams",
+            "bravo": "koti",
+            "charlie": "kumar",
+        };
+        result = lookup[val];
+        return result;
+
+    }
+
+    console.log(objLookups("charlie"))
+
+    //testing objects for property
+    var lookup = {
+            "alpha": "adams",
+            "bravo": "koti",
+            "charlie": "kumar",
+        };
+    function checkObj(checkProp){
+        if (lookup.hasOwnProperty(checkProp)){
+            return lookup[checkProp];
+        }else {
+            return "property not found";
+        }
+    }
+    console.log(checkObj("alpha"))
+
+    JSON.parse(Json,stringify(collection))//make copy of objects
+</script>

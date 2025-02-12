@@ -1,0 +1,43 @@
+<script>
+    //comparison with logical and operater
+    function testOperater(val){
+        if(val>=100){
+            return "100 or over";
+        }
+
+        if(val>=10 ){
+            return "10 or over";
+        }
+
+        return "less that 10";
+
+    }
+    console.log(testOperater(15));
+
+
+
+
+    //two thing at same time
+    function checkOperater(val){
+        if(val <=50){//nested if statement
+            if(val >=20){
+                return "yes";
+            }
+        }
+      return "no";
+    }
+
+    console.log(checkOperater(34));
+
+
+    //by using and operater
+    function checkOperater(val){
+        if(val <=50 && val >= 20){
+                return "yes";
+            }
+            return "no";
+        }
+      
+    console.log(checkOperater(34));
+
+</script>
